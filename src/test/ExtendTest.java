@@ -30,7 +30,7 @@ public class ExtendTest extends Father implements Fly{
 		@SuppressWarnings("unused")
 		StringBuffer  sb = new StringBuffer();
 		
-		//ArrayList初始化容量时，空参默认为10，实参是n就是长度为n的Object[]数组，大于n时扩容1.5倍
+		//ArrayList初始化容量时，空参默认为10，实参是n就是长度为n的Object[]数组，大于n时扩容1.5倍，将原数据复制到新数组
 		//，add时初始化容量，没有add时为{}
 		//vector,线程安全，初始化就有容量，10，扩容2倍
 		List<Integer> list = new ArrayList<Integer>();

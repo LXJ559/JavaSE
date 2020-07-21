@@ -1,0 +1,119 @@
+Classfile /C:/BPA/javaSE/JavaSE/classes/production/jvm/HelloJVMDemo.class
+  Last modified 2020-7-2; size 801 bytes
+  MD5 checksum 5d8da32e053702bcdc4236dc51217f07
+  Compiled from "HelloJVMDemo.java"
+//类型信息
+public class HelloJVMDemo
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #12.#30        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #31.#32        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = String             #33            // start....
+   #4 = Methodref          #34.#35        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = Long               1000000l
+   #7 = Methodref          #36.#37        // java/lang/Thread.sleep:(J)V
+   #8 = Class              #38            // java/lang/InterruptedException
+   #9 = Methodref          #8.#39         // java/lang/InterruptedException.printStackTrace:()V
+  #10 = String             #40            // end....
+  #11 = Class              #41            // HelloJVMDemo
+  #12 = Class              #42            // java/lang/Object
+  #13 = Utf8               <init>
+  #14 = Utf8               ()V
+  #15 = Utf8               Code
+  #16 = Utf8               LineNumberTable
+  #17 = Utf8               LocalVariableTable
+  #18 = Utf8               this
+  #19 = Utf8               LHelloJVMDemo;
+  #20 = Utf8               main
+  #21 = Utf8               ([Ljava/lang/String;)V
+  #22 = Utf8               e
+  #23 = Utf8               Ljava/lang/InterruptedException;
+  #24 = Utf8               args
+  #25 = Utf8               [Ljava/lang/String;
+  #26 = Utf8               StackMapTable
+  #27 = Class              #38            // java/lang/InterruptedException
+  #28 = Utf8               SourceFile
+  #29 = Utf8               HelloJVMDemo.java
+  #30 = NameAndType        #13:#14        // "<init>":()V
+  #31 = Class              #43            // java/lang/System
+  #32 = NameAndType        #44:#45        // out:Ljava/io/PrintStream;
+  #33 = Utf8               start....
+  #34 = Class              #46            // java/io/PrintStream
+  #35 = NameAndType        #47:#48        // println:(Ljava/lang/String;)V
+  #36 = Class              #49            // java/lang/Thread
+  #37 = NameAndType        #50:#51        // sleep:(J)V
+  #38 = Utf8               java/lang/InterruptedException
+  #39 = NameAndType        #52:#14        // printStackTrace:()V
+  #40 = Utf8               end....
+  #41 = Utf8               HelloJVMDemo
+  #42 = Utf8               java/lang/Object
+  #43 = Utf8               java/lang/System
+  #44 = Utf8               out
+  #45 = Utf8               Ljava/io/PrintStream;
+  #46 = Utf8               java/io/PrintStream
+  #47 = Utf8               println
+  #48 = Utf8               (Ljava/lang/String;)V
+  #49 = Utf8               java/lang/Thread
+  #50 = Utf8               sleep
+  #51 = Utf8               (J)V
+  #52 = Utf8               printStackTrace
+{
+  //域（field）信息
+
+  //方法信息
+  public HelloJVMDemo();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LHelloJVMDemo;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+       //操作数栈的深度2，局部变量表的长度2
+      stack=2, locals=2, args_size=1
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #3                  // String start....
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: ldc2_w        #5                  // long 1000000l
+        11: invokestatic  #7                  // Method java/lang/Thread.sleep:(J)V
+        14: goto          22
+        17: astore_1
+        18: aload_1
+        19: invokevirtual #9                  // Method java/lang/InterruptedException.printStackTrace:()V
+        22: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: ldc           #10                 // String end....
+        27: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        30: return
+      Exception table:
+         from    to  target type
+             8    14    17   Class java/lang/InterruptedException
+      LineNumberTable:
+        line 3: 0
+        line 5: 8
+        line 8: 14
+        line 6: 17
+        line 7: 18
+        line 9: 22
+        line 10: 30
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           18       4     1     e   Ljava/lang/InterruptedException;
+            0      31     0  args   [Ljava/lang/String;
+      StackMapTable: number_of_entries = 2
+        frame_type = 81 /* same_locals_1_stack_item */
+          stack = [ class java/lang/InterruptedException ]
+        frame_type = 4 /* same */
+}
+SourceFile: "HelloJVMDemo.java"
